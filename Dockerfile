@@ -14,7 +14,7 @@
 
 
 # pull base image
-FROM python:3.6-slim-stretch
+FROM python:3.7.16-slim-buster
 
 MAINTAINER William Yeh <william.pjyeh@gmail.com>
 
@@ -64,6 +64,7 @@ RUN \
         unittest-xml-reporting  \
         nose                    \
         mockito                 \
+        pyaml                   \
         pyshould                \
                                 && \
     \
